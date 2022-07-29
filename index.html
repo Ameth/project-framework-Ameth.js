@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <title>Hola Vue</title>
+  </head>
+  <body>
+    <div id="app">
+      <span a-text="message"></span>
+      <br />
+      <input type="text" a-model="message" />
+    </div>
+
+    <script>
+      const { createApp } = Ameth;
+
+      const app = createApp({
+        data() {
+          return {
+            message: "Hola Ameth.js!",
+          };
+        },
+      });
+
+      app.mount();
+    </script>
+  </body>
+</html>
