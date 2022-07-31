@@ -9,9 +9,13 @@
   </head>
   <body>
     <div id="app">
+      <span a-text="message"></span><br />
       <span a-text="message"></span>
       <br />
       <input type="text" a-model="message" />
+      <input type="text" a-model="message" />
+      <br />
+      <img a-bind:src="imagen" a-bind:width="message" a-bind:title="title" />
     </div>
 
     <script>
@@ -20,7 +24,11 @@
       const app = createApp({
         data() {
           return {
-            message: "Hola Ameth.js!",
+            message: "600px",
+            ancho: "600px",
+            title: "JW.org",
+            imagen:
+              "https://assetsnffrgf-a.akamaihd.net/assets/m/2020162/univ/art/2020162_univ_lsr_lg.jpg",
           };
         },
       });
